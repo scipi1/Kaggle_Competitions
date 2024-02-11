@@ -1,0 +1,36 @@
+FloatLayoutCircle:
+
+#:set s dp(150)
+
+<FloatLayoutCircle>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 0.8
+        Line:
+            circle: (self.center_x, self.center_y,s)
+            width: 4
+
+<AvatarPopup>:
+    id: pop
+    PopGridLayout:
+
+    
+
+<PopGridLayout>:
+    cols: 3
+    Button:
+        text:'Close'
+        on_press: pop.dismiss()
+    Button:
+        text:'A'
+        
+    Button:
+        text:'B'
+        
+
+
+
+
+
+        
+
